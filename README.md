@@ -148,6 +148,7 @@ Some of the tools may be specifically designed for red teaming, while others are
             <li><b><a href="#linpeas">LinPEAS</a></b><i> Linux privilege escalation</i></li>
             <li><b><a href="#winpeas">WinPEAS</a></b><i> Windows privilege escalation</i></li>
             <li><b><a href="#linux-smart-enumeration">linux-smart-enumeration</a></b><i> Linux privilege escalation</i></li>
+            <li><b><a href="#SUDO_KILLER">SUDO_KILLER</a></b><i> Linux privilege escalation via sudo</i></li>  
             <li><b><a href="#certify">Certify</a></b><i> Active directory privilege escalation</i></li>
             <li><b><a href="#get-gpppassword">Get-GPPPassword</a></b><i> Windows password extraction</i></li>
             <li><b><a href="#sherlock">Sherlock</a></b><i> PowerShell privilege escalation tool</i></li>
@@ -2168,6 +2169,19 @@ Linux smart enumeration is another good, less verbose, linux privesc tool for Li
 ```bash
 curl "https://github.com/diego-treitos/linux-smart-enumeration/releases/latest/download/lse.sh" -Lo lse.sh;chmod 700 lse.sh
 ```
+
+
+### [🔙](#tool-list)[SUDO_KILLER](https://github.com/TH3xACE/SUDO_KILLER)
+
+SUDO_KILLER is a tool to identify and exploit sudo rules' misconfigurations and vulnerabilities within sudo for linux privilege escalation.
+
+**Install + Usage:** 
+
+```bash
+git clone https://github.com/TH3xACE/SUDO_KILLER.git
+./sudo_killer.sh -c -e -r report.txt -p /tmp
+```
+
 
 ![image](https://user-images.githubusercontent.com/100603074/192070258-2fe8727a-4b75-430d-a84e-da6605750de9.png)
 
